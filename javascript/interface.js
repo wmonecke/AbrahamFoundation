@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   setTimeout(() => {
-    $('.quote').fadeIn(4000);
-  }, 2000);
+    $('.quote').fadeIn(2000);
+  }, 1000);
 
   $('.landingbackground').vegas({
     preload: false,
@@ -37,6 +37,12 @@ $(document).ready(function() {
     event.preventDefault();
     $('.theTeam').animatescroll({scrollSpeed: 1500});
     $('.theTeamTitle').css('display', 'none').fadeIn(2000);
+  });
+
+  $('#toTheForm, #getInTouchNav').on('click', function(event){
+    event.preventDefault();
+    $('.getInTouch').animatescroll({scrollSpeed: 1700});
+    $('.getInTouchTitle').css('display', 'none').fadeIn(2000);
   });
 
   //Managing information
@@ -122,6 +128,11 @@ $(document).ready(function() {
     if ( y >= 1200 ) {
       $('.anthonyAndGenevieve, .anthonyAndGenevieveCaption').addClass('animated fadeInLeft');
       $('.goals').addClass('animated fadeInRight');
+    }
+
+    if ( y >= 1900 ) {
+      $('.imagesContainer').addClass('animated fadeInLeft');
+      $('.information').addClass('animated fadeInRight');
     }
 
  });
