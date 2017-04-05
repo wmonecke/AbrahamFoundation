@@ -20,7 +20,8 @@ $(document).ready(function() {
     overlay: 'images/overlays/05.png'
   });
 
-  //Anchortag scrolling
+  // ANCHORTAG SCROLLING
+
   $('#purpose').on('click', function(event){
     event.preventDefault();
     $('.ourpurpose').animatescroll({scrollSpeed: 1500});
@@ -45,7 +46,13 @@ $(document).ready(function() {
     $('.getInTouchTitle').css('display', 'none').fadeIn(2000);
   });
 
-  //Managing information
+  $('#allTheWayUp').on('click', function(event){
+    event.preventDefault();
+    $('#navbar').animatescroll({scrollSpeed: 1700});
+  });
+
+  // MANAGING INFORMATION OF CLICKS
+
   $('.thomas').on('click', () => {
     $('.thomas').css('border', '6px solid gold');
     $('.nick, .tom, .norma, .nancy').css({'border': 'none', 'pointer-events': 'none'});
@@ -111,7 +118,8 @@ $(document).ready(function() {
     }, 500);
     });
   });
-  //ANIMATE CSS ANIMATIONS
+
+  // ANIMATE CSS ANIMATIONS
 
   $(window).one('scroll', function() {
    console.log( $(this).scrollTop() );
@@ -127,15 +135,20 @@ $(document).ready(function() {
 
     if ( y >= 1200 ) {
       $('.anthonyAndGenevieve, .anthonyAndGenevieveCaption').addClass('animated fadeInLeft');
-      $('.goals').addClass('animated fadeInRight');
+      $('.goals').addClass('animated fadeIn');
     }
 
     if ( y >= 1900 ) {
       $('.imagesContainer').addClass('animated fadeInLeft');
       $('.information').addClass('animated fadeInRight');
     }
-
  });
 
+ // CSS FOR CONTACT US
+
+ $('input, textarea').on('click', (event) => {
+
+  console.log($(event.currentTarget).data('input'));
+ });
 
 });

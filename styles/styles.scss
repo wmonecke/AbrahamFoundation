@@ -5,7 +5,10 @@
   font-family: sans-serif, arial;
 }
 
-body {
+body, html {
+  display: inline-block;
+  min-width: 1000px;
+
   overflow-x: hidden;
 }
 
@@ -129,7 +132,6 @@ a {
 
     min-width: 1281px;
 
-
     .quote {
       display: none;
 
@@ -172,8 +174,9 @@ a {
   .ourpurpose {
     position: absolute;
     z-index: -6;
-    top: 100vh;
+    top: 110vh;
     margin-top: 10vh;
+
     height: 100vh;
     width: 100vw;
     background-color: rgba(255,255,255,1);
@@ -185,7 +188,7 @@ a {
       position: absolute;
       top: -10vh;
       left: 9.5vw;
-      z-index: -7;
+      z-index: -3;
       border-radius: 50%;
       height: 135vh;
       width: 80vw;
@@ -197,7 +200,7 @@ a {
       h5 {
         position: relative;
         top: 7vh;
-        right: 31vw;
+        left: -31vw;
         color: #333333;
         font-size: 3em;
         font-weight: lighter;
@@ -229,8 +232,6 @@ a {
       box-sizing: border-box;
       box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
 
-      animation-duration: 1.4s;
-
       img {
         width: 280px;
         height: 460px;
@@ -241,8 +242,6 @@ a {
       position: absolute;
       right: 12vw;
       top: 54vh;
-
-      animation-duration: 1.4s;
 
       p {
         font-size: 0.8em;
@@ -275,7 +274,7 @@ a {
 
       transition: color .5s ease;
       &:hover {
-        color: rgb(211,94,103);
+        color: #015eac;
       }
     }
 
@@ -304,7 +303,6 @@ a {
       -moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
       -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
       box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
-      animation-duration: 1.4s;
 
       img {
         position: absolute;
@@ -321,7 +319,6 @@ a {
       position: absolute;
       bottom: 4vh;
       left: 22vw;
-      animation-duration: 1.4s;
 
       p {
         font-size: 0.8em;
@@ -334,7 +331,6 @@ a {
       position: absolute;
       bottom: 4vh;
       left: 38vw;
-      animation-duration: 1.4s;
 
       p {
         font-size: 0.8em;
@@ -347,7 +343,7 @@ a {
 
   section.ourpurposeTwo {
     position: absolute;
-    top: 200vh;
+    top: 220vh;
 
     margin-top: 30vh;
     height: 100vh;
@@ -356,30 +352,44 @@ a {
 
     min-width: 1281px;
 
+    .circleyellow {
+      position: absolute;
+      top: -10vh;
+      left: 9.5vw;
+      z-index: -7;
+      border-radius: 50%;
+      height: 135vh;
+      width: 80vw;
+      border: 2px solid white;
+      background-color: rgba(253,245,230,0.8);
+    }
+
     .hr {
       position: relative;
-      right: -21vw;
-      bottom: 5vh;
+      right: -6vw;
+      bottom: -28vh;
       margin: auto;
 
       display: flex;
       justify-content: center;
       align-items: center;
 
-      padding: 3vh 1vw 2vh 1vw;
-      width: 40vw;
+      padding: 2vh 1vw 2vh 1vw;
+      width: 44vw;
       height: 20vh;
-
       border: 1px solid transparent;
       border-radius: 4px;
-      background-color: rgb(204,94,94);
+      background-color: rgba(255,255,255,0.8);
 
       p {
-        text-align: center;
+        text-align: justify;
         width: 37vw;
-        color: white;
         font-weight: lighter;
         font-size: 1.3em;
+
+        b{
+          color: rgb(211,94,103);
+        }
       }
     }
 
@@ -387,7 +397,7 @@ a {
       opacity: 0;
 
       position: absolute;
-      top: 0vh;
+      top: 8vh;
       left: 8vw;
       border-radius: 8px;
       border: 1px solid transparent;
@@ -395,7 +405,6 @@ a {
       height: 300px;
       overflow: hidden;
 
-      animation-duration: 1.4s;
       box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
 
       img {
@@ -407,11 +416,8 @@ a {
       opacity: 0;
 
       position: absolute;
-      top: 47vh;
+      top: 55vh;
       left: 9vw;
-
-      animation-duration: 1.4s;
-
 
       p {
         font-size: 0.8em;
@@ -421,14 +427,13 @@ a {
 
     .vision {
       position: absolute;
-      top: 22vh;
+      top: 3vh;
       left: 25vw;
-      width: 100vw;
 
       h5 {
         position: relative;
         top: 7vh;
-        right: 33vw;
+        right: 16vw;
         color: #333333;
         font-size: 3em;
         font-weight: lighter;
@@ -441,7 +446,6 @@ a {
 
         overflow: hidden;
         text-align: left;
-        width: 100vw;
         color: #333333;
         font-size: 3.5em;
         letter-spacing: -2px;
@@ -451,21 +455,23 @@ a {
     .goals {
       opacity: 0;
 
-      background-color: #fdf5e6;
       height: 30vh;
-      width: 85vw;
+      width: 70vw;
       margin: auto;
 
       position: relative;
-      top: 33vh;
+      top: 38vh;
+      left: 6vw;
       text-align: center;
 
       border: 1px solid transparent;
       border-radius: 4px;
+      font-size: 1.2em;
 
-      animation-duration: 1.6s;
+      b {
+        color: rgb(204,94,94);
+      }
 
-      box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
 
       .ion-chevron-down {
         position: absolute;
@@ -498,7 +504,7 @@ a {
 
   section.theTeam {
     position: absolute;
-    top: 330vh;
+    top: 369vh;
 
     margin-top: 10vh;
     width: 100vw;
@@ -508,12 +514,12 @@ a {
       position: absolute;
       top: -10vh;
       left: 9.5vw;
-      z-index: -7;
+      z-index: -9;
       border-radius: 50%;
       height: 135vh;
       width: 80vw;
       border: 2px solid white;
-      background-color: rgba(218, 239, 249, 1);
+      background-color: rgba(218, 239, 249, 0.7);
     }
   }
 
@@ -621,7 +627,7 @@ a {
 
     transition: color .5s ease;
     &:hover {
-      color: rgb(211,94,103);
+      color: gold;
     }
   }
 
@@ -656,9 +662,11 @@ a {
       }
 
       article {
+        font-family: sans-serif;
+        font-weight: 100;
         color: #333333;
         padding: 5px;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.3);
         border-radius: 4px;
         overflow: scroll;
         text-align: justify;
@@ -686,9 +694,10 @@ a {
       }
 
       article {
+        font-weight: 100;
         color: #333333;
         padding: 5px;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.3);
         border-radius: 4px;
         overflow: scroll;
         text-align: justify;
@@ -714,9 +723,10 @@ a {
       }
 
       article {
+        font-weight: 100;
         color: #333333;
         padding: 5px;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.3);
         border-radius: 4px;
         overflow: scroll;
         text-align: justify;
@@ -743,9 +753,10 @@ a {
       }
 
       article {
+        font-weight: 100;
         color: #333333;
         padding: 5px;
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.3);
         border-radius: 4px;
         overflow: scroll;
         text-align: justify;
@@ -772,9 +783,10 @@ a {
       }
 
       article {
+        font-weight: 100;
         color: #333333;
         padding: 5px;
-        background-color: rgba(255,255,255,0.4);
+        background-color: rgba(255,255,255,0.3);
         border-radius: 4px;
         overflow: scroll;
         text-align: justify;
@@ -792,7 +804,7 @@ a {
   section.getInTouch {
     overflow: visible;
     position: relative;
-    top: 30vh;
+    top: 500vh;
     width: 100vw;
     height: 120vh;
     background-color: white;
@@ -827,15 +839,109 @@ a {
       position: absolute;
       top: 20vh;
       right: 3.8vw;
-      border: 1px solid black;
+
+      text-align: left;
+      padding-top: 5vh;
+      box-sizing: border-box;
       width: 65vw;
       height: 72vh;
+      label {
+        margin-top: 2vh;
+        font-size: 1.5em;
+        margin: 1vh 0vw 3vh 0vw;
+      }
+      input, textarea {
+        margin-top: 0vh;
+        margin-bottom: 3vh;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #333333;
+        outline: none;
+        font-size: 1em;
+        width: 15vw;
+        height: 4vh;
+      }
+
+      textarea {
+        width: 40vw;
+        height: 20vh;
+      }
+
+      input[type="submit"] {
+        position: relative;
+        top: 1.4vh;
+        font-size: 1.2em;
+        font-weight: bold;
+        height: 7vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        background-color: gold;
+        transition: background-color .5s ease, color .5s ease;
+        &:hover {
+          background-color: black;
+          color: gold;
+        }
+      }
     }
 
+    .ion-chevron-up {
 
+      position: absolute;
+      bottom: 24vh;
+      right: 10vw;
+      font-size: 4.5em;
+      color: #333333;
+      cursor: pointer;
+
+
+      animation-name: bounce;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      webkit-animation-duration:2s;
+      -moz-animation-duration:2s;
+      -ms-animation-duration:2s;
+      -o-animation-duration:2s;
+      animation-duration:2s;
+
+      transition: color .5s ease;
+      &:hover {
+        color: rgb(211,94,103);
+      }
+
+    }
+    .iconCaption {
+      position: absolute;
+      bottom: 23vh;
+      right: 8.5vw;
+      font-size: 0.8em;
+      font-weight: 100;
+    }
   }
 }
 
+footer {
+  position: relative;
+  top: 490vh;
+  height: 22vh;
+  width: 100vw;
+  background-color: #333333;
+  border: 1px solid black;
+  padding-top: 9vh;
+  box-sizing: border-box;
+  color: white;
+  .copyright {
+    display: block;
+  }
+  .small {
+    font-size: 0.4em;
+    display: block;
+  }
+}
 
 // -------------------------- MEDIA QUERIES -----------------------
 
@@ -850,7 +956,6 @@ a {
       }
     }
   }
-
 }
 
 // -------------------------- KEY FRAMES -----------------------
