@@ -151,7 +151,7 @@ $(document).ready(function() {
  });
 
  // SLIDEDOWN CSS
-  $("ul:last-child").on('click', function(){
+  $("#getintouch").on('click', function(){
     $(".getInTouchMenu").stop().slideToggle("slow");
   });
 

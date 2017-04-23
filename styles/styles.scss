@@ -74,6 +74,15 @@ a {
   width: 100vw;
   height: 100vh;
 
+  // *** LOGO ***
+  .foundationLogo {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+
+    width: 4vw;
+  }
+
   // *** NAVIGATION BAR STYLING ***
   nav {
     width: 100vw;
@@ -92,7 +101,9 @@ a {
     li {
       display: inline;
       position: relative;
-
+      &:nth-child(1) {
+        color: rgba(255, 255, 255, 0.0);
+      }
 
       &::after, &:after {
         padding: 2vw;
