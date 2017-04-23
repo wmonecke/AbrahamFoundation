@@ -28,19 +28,19 @@ $(document).ready(function() {
     $('.purposeinfo').css('display', 'none').fadeIn(4000);
   });
 
-  $('#ion-chevron-down').on('click', function(event){
+  $('#ion-chevron-down, #whatwedo').on('click', function(event){
     event.preventDefault();
     $('.ourpurposeTwo').animatescroll({scrollSpeed: 1500});
     $('.vision').css('display', 'none').fadeIn(2000);
   });
 
-  $('#toTheTeam').on('click', function(event){
+  $('#toTheTeam, #whoweare').on('click', function(event){
     event.preventDefault();
     $('.theTeam').animatescroll({scrollSpeed: 1500});
     $('.theTeamTitle').css('display', 'none').fadeIn(2000);
   });
 
-  $('#toTheForm, #getInTouchNav').on('click', function(event){
+  $('#toTheForm, .emailNav').on('click', function(event){
     event.preventDefault();
     $('.getInTouch').animatescroll({scrollSpeed: 1700});
     $('.getInTouchTitle').css('display', 'none').fadeIn(2000);
@@ -147,8 +147,16 @@ $(document).ready(function() {
  // CSS FOR CONTACT US
 
  $('input, textarea').on('click', (event) => {
-
   console.log($(event.currentTarget).data('input'));
  });
+
+ // SLIDEDOWN CSS
+  $("ul:last-child").on('click', function(){
+    $(".getInTouchMenu").stop().slideToggle("slow");
+  });
+
+  $('.ladingsection').mouseenter(function() {
+    $(".getInTouchMenu").slideUp("slow");
+  });
 
 });

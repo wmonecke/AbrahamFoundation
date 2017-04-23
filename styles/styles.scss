@@ -1,5 +1,6 @@
 // RESETTING PADDING AND MARGIN FOR ALL ELEMENTS
-* {
+
+*{
   padding: 0px;
   margin: 0px;
   font-family: sans-serif, arial;
@@ -29,12 +30,22 @@ a {
   src: url('../fonts/Rosarivo-Italic.ttf');
 }
 
+@font-face {
+  font-family: minionPro;
+  src: url('../fonts/Minion_Pro_Regular.ttf');
+}
+
 // ------------------- STYLING OF INDEX.HTML (HOME) -------------------------
+
+a {
+  &:hover {
+    color: rgb(211,94,103);
+  }
+}
 
 // *** BACKGROUND SETUP ***
 .landingbackground {
   position: absolute;
-  // top: 10vh;
   z-index: 2;
   background-size: cover;
   width: 100vw;
@@ -63,7 +74,7 @@ a {
   width: 100vw;
   height: 100vh;
 
-// *** NAVIGATION BAR STYLING ***
+  // *** NAVIGATION BAR STYLING ***
   nav {
     width: 100vw;
     height: 10vh;
@@ -96,7 +107,7 @@ a {
       }
 
       &:nth-child(2) {
-        margin-left: 39vw;
+        margin-left: 40vw;
       }
 
       &:first-child {
@@ -116,10 +127,69 @@ a {
       }
 
     }
-  }
-// *** CLOSE NAV BAR ***
 
-// *** QUOTE STYLING ***
+
+  }
+  // *** CLOSE NAV BAR ***
+
+  // *** GET IN TOUCH SLIDEDOWN ***
+  .getInTouchMenu {
+    z-index: 5;
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 14.2vw;
+
+    color: #333333;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 11px 11px 0px rgba(50,50,50,0.4);
+    -moz-box-shadow: 0px 11px 11px 0px rgba(50,50,50,0.4);
+    box-shadow: 0px 11px 11px 0px rgba(50,50,50,0.4);
+
+    ul {
+      &:nth-child(1){
+        margin-top: 2vh;
+      }
+      &:nth-child(3) {
+        position: relative;
+        left: 1vw;
+      }
+      li {
+        text-align: left;
+        position: relative;
+        left: 4vw;
+        list-style-type: none;
+        margin-bottom: 4vh;
+        cursor: pointer;
+        transition: color .2s ease;
+        &:hover {
+          color: rgb(211,94,103);
+        }
+
+        i {
+          font-size: 1.4em;
+          position: relative;
+          right: 1vw;
+          transition: color .2s ease;
+        }
+
+        a {
+          color: #333333;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
+          cursor: pointer;
+          &:hover {
+            color: rgb(211,94,103);
+          }
+        }
+      }
+
+    }
+
+  }
+
+  // *** QUOTE STYLING ***
   .ladingsection {
     position: absolute;
     display: flex;
@@ -134,23 +204,23 @@ a {
 
     .quote {
       display: none;
-
+      font-weight: 400;
       text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
       color: rgba(255, 255, 255, 1);
       pointer-events: none;
       position: relative;
       top:17vh;
-      font-family: butlerFont;
+
       letter-spacing: 1px;
       font-size: 2.2em;
 
       .firstmark {
         position: relative;
-        top: 4vh;
+        top: 3.8vh;
       }
 
       .block1 {
-        font-family: butlerFont;
+        font-weight: 400;
         position: relative;
         top: 4vh;
       }
@@ -158,7 +228,7 @@ a {
       .quoter {
         position: relative;
         top: 2vh;
-        font-family: butlerFont;
+        font-weight: 300;
         font-size: 0.8em;
 
       }
@@ -170,7 +240,7 @@ a {
     }
   }
 
-//------------- OUR PURPOSE PT. 1 ------------------------
+  //------------- OUR PURPOSE PT. 1 ------------------------
   .ourpurpose {
     position: absolute;
     z-index: -6;
@@ -339,7 +409,7 @@ a {
     }
   }
 
-//------------- OUR PURPOSE PT. 2 ------------------------
+  //------------- OUR PURPOSE PT. 2 ------------------------
 
   section.ourpurposeTwo {
     position: absolute;
@@ -370,6 +440,7 @@ a {
       bottom: -28vh;
       margin: auto;
 
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -385,6 +456,7 @@ a {
         text-align: justify;
         width: 37vw;
         font-weight: lighter;
+        font-family: minionPro;
         font-size: 1.3em;
 
         b{
@@ -662,7 +734,7 @@ a {
       }
 
       article {
-        font-family: sans-serif;
+        font-family: minionPro;
         font-weight: 100;
         color: #333333;
         padding: 5px;
@@ -695,6 +767,7 @@ a {
 
       article {
         font-weight: 100;
+        font-family: minionPro;
         color: #333333;
         padding: 5px;
         background-color: rgba(255,255,255,0.3);
@@ -724,6 +797,7 @@ a {
 
       article {
         font-weight: 100;
+        font-family: minionPro;
         color: #333333;
         padding: 5px;
         background-color: rgba(255,255,255,0.3);
@@ -754,6 +828,7 @@ a {
 
       article {
         font-weight: 100;
+        font-family: minionPro;
         color: #333333;
         padding: 5px;
         background-color: rgba(255,255,255,0.3);
@@ -784,6 +859,7 @@ a {
 
       article {
         font-weight: 100;
+        font-family: minionPro;
         color: #333333;
         padding: 5px;
         background-color: rgba(255,255,255,0.3);
@@ -833,6 +909,24 @@ a {
       -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
       box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.4);
       overflow: hidden;
+    }
+
+    .socialMedia {
+      position: absolute;
+      z-index: 5;
+      top: 25vh;
+      right: 11.5vw;
+
+      a {
+        display: block;
+        color: #333333;
+        font-size: 2.5em;
+        margin-bottom: 10vh;
+        transition: color .2s ease;
+        &:hover {
+          color: rgb(211,94,103);
+        }
+      }
     }
 
     .form {
@@ -961,58 +1055,58 @@ footer {
 // -------------------------- KEY FRAMES -----------------------
 
 @-webkit-keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
-	60% {-webkit-transform: translateY(-15px);}
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
 }
 
 @-moz-keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
-	40% {-moz-transform: translateY(-30px);}
-	60% {-moz-transform: translateY(-15px);}
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
 }
 
 @-o-keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
-	40% {-o-transform: translateY(-30px);}
-	60% {-o-transform: translateY(-15px);}
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
 }
 @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
 }
 
 /*topToBottom Animation*/
 @-moz-keyframes topToBottom{
-	0% { opacity: 0; }
-	5% { opacity: 0; -moz-transform: translateY(-50px); }
-	10% { opacity: 1; -moz-transform: translateY(0px); }
-	25% { opacity: 1; -moz-transform: translateY(0px); }
-	30% { opacity: 0; -moz-transform: translateY(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+  0% { opacity: 0; }
+  5% { opacity: 0; -moz-transform: translateY(-50px); }
+  10% { opacity: 1; -moz-transform: translateY(0px); }
+  25% { opacity: 1; -moz-transform: translateY(0px); }
+  30% { opacity: 0; -moz-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 @-webkit-keyframes topToBottom{
-	0% { opacity: 0; }
-	5% { opacity: 0; -webkit-transform: translateY(-50px); }
-	10% { opacity: 1; -webkit-transform: translateY(0px); }
-	25% { opacity: 1; -webkit-transform: translateY(0px); }
-	30% { opacity: 0; -webkit-transform: translateY(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+  0% { opacity: 0; }
+  5% { opacity: 0; -webkit-transform: translateY(-50px); }
+  10% { opacity: 1; -webkit-transform: translateY(0px); }
+  25% { opacity: 1; -webkit-transform: translateY(0px); }
+  30% { opacity: 0; -webkit-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 @-ms-keyframes topToBottom{
-	0% { opacity: 0; }
-	5% { opacity: 0; -ms-transform: translateY(-50px); }
-	10% { opacity: 1; -ms-transform: translateY(0px); }
-	25% { opacity: 1; -ms-transform: translateY(0px); }
-	30% { opacity: 0; -ms-transform: translateY(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+  0% { opacity: 0; }
+  5% { opacity: 0; -ms-transform: translateY(-50px); }
+  10% { opacity: 1; -ms-transform: translateY(0px); }
+  25% { opacity: 1; -ms-transform: translateY(0px); }
+  30% { opacity: 0; -ms-transform: translateY(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 .slidingVertical{
-	display: inline;
+  display: inline;
   text-align: center;
   margin: auto;
 
@@ -1026,38 +1120,38 @@ footer {
   }
 }
 .slidingVertical span{
-	animation: topToBottom 20s linear infinite 0s;
-	-ms-animation: topToBottom 20s linear infinite 0s;
-	-webkit-animation: topToBottom 20s linear infinite 0s;
-	color: #333333;
+  animation: topToBottom 20s linear infinite 0s;
+  -ms-animation: topToBottom 20s linear infinite 0s;
+  -webkit-animation: topToBottom 20s linear infinite 0s;
+  color: #333333;
   font-weight: lighter;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
 }
 .slidingVertical span:nth-child(2){
-	animation-delay: 4s;
-	-ms-animation-delay: 4s;
-	-webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
 }
 .slidingVertical span:nth-child(3){
-	animation-delay: 8s;
-	-ms-animation-delay: 8s;
-	-webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -webkit-animation-delay: 8s;
 }
 .slidingVertical span:nth-child(4){
-	animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	-webkit-animation-delay: 12s;
+  animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
 }
 .slidingVertical span:nth-child(5){
-	animation-delay: 16s;
-	-ms-animation-delay: 16s;
-	-webkit-animation-delay: 16s;
+  animation-delay: 16s;
+  -ms-animation-delay: 16s;
+  -webkit-animation-delay: 16s;
 }
 
 .slidingVertical span:nth-child(6){
-	animation-delay: 20s;
-	-ms-animation-delay: 20s;
-	-webkit-animation-delay: 20s;
+  animation-delay: 20s;
+  -ms-animation-delay: 20s;
+  -webkit-animation-delay: 20s;
 }
