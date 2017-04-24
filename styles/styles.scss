@@ -81,6 +81,7 @@ a {
     left: 3vw;
 
     width: 4vw;
+    height: 10vh;
   }
 
   // *** NAVIGATION BAR STYLING ***
@@ -369,6 +370,17 @@ a {
       p {
         text-align: justify;
         font-size: 1.2em;
+      }
+    }
+
+    @-moz-document url-prefix() {
+      .empoweringpic {
+          top: -30vh;
+      }
+
+      .downnn{
+        position: relative;
+        top: 30vh;
       }
     }
 
