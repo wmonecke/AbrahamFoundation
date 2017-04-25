@@ -159,4 +159,13 @@ $(document).ready(function() {
     $(".getInTouchMenu").slideUp("slow");
   });
 
+// --------------------- MOBILE JS ---------------------------
+  $('.openMenu').on('click', () => {
+    $('.mobMenu').fadeIn(500);
+  });
+
+  $('#closeMenu').on('click', () => {
+    $('.mobMenu').fadeOut(500);
+  });
+
 });

@@ -1074,8 +1074,50 @@ footer {
     display: none;
   }
 
-  section.mobLandingPage {
+  .mobMenu {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.8);
+    padding: 10vh;
+
+    box-sizing: border-box;
     height: 100vh;
+    width: 100vw;
+    i {
+      position: absolute;
+      right: 2vw;
+      top: 2vh;
+      font-size: 42px;
+
+      color: white;
+    }
+
+    @media (max-width: 321px) {
+      li {
+          font-size: 30px !important;
+      }
+    }
+
+    li {
+      list-style-type: none;
+      color: white;
+      font-size: 40px;
+      margin-bottom: 15vh;
+      border-bottom: 1px solid white;
+      padding-bottom: 1vh;
+    }
+  }
+
+  section.mobLandingPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ebf4ff;
+
+
+
     nav {
       position: relative;
       z-index: 5;
@@ -1089,6 +1131,7 @@ footer {
       box-shadow: 0px 11px 11px 0px rgba(50,50,50,0.4);
 
       background-color: rgba(255, 255, 255, 0.9);
+
       ul {
 
         li {
@@ -1096,15 +1139,28 @@ footer {
 
           img {
             position: absolute;
-            top: 1.2vh;
+            top: 1.8vh;
             left: 4vw;
             width: 10vw;
           }
 
           &:nth-child(2) {
-            font-size: 32px;
-            position: relative;
-            left: 85vw;
+            position: absolute;
+            top: 2vh;
+            right: 0;
+            left: 0;
+            margin: auto;
+            font-weight: 300;
+            text-align: center;
+            font-size: 22px;
+          }
+
+          &:nth-child(3) {
+            font-size: 42px;
+            position: absolute;
+            right: 2vw;
+            top: 2vh;
+
             float: right;
           }
         }
@@ -1115,17 +1171,44 @@ footer {
     .mobLandingContent {
       position: relative;
       top: 10vh;
-      height: 656px;
+      height: 90vh;
       width: 100vw;
 
       img {
         position: relative;
         right: 34vw;
         bottom: 10vh;
-      }
 
+      }
     }
 
+    .quoteContainer {
+      position: relative;
+      top: -26vh;
+      height: 25vh;
+
+      display: flex;
+
+      img.quotationmarks{
+        position: absolute;
+        top: 2vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 8;
+        width: 10vw;
+      }
+
+      .quote {
+        position: relative;
+
+        font-weight: lighter;
+        margin: auto;
+        text-align: center;
+        font-size: 22px;
+
+      }
+    }
 
 
   }
@@ -1139,8 +1222,10 @@ footer {
 
 } // CLOSE MEDIA QUERY
 
-@media (max-width: 420px) {
-
+@media (min-width: 420px) {
+  .mobile {
+    display: none;
+  }
 }
 
 
