@@ -168,4 +168,24 @@ $(document).ready(function() {
     $('.mobMenu').fadeOut(500);
   });
 
+  //-------------------- MENU LINKS ------------------------
+  $('#mobOurPurpose').on('click', () => {
+    $('section.mobOurPurpose').animatescroll({ scrollSpeed: 500 });
+    $('.mobMenu').fadeOut(500);
+  });
+
+  $('#mobWhatWeDo').on('click', () => {
+    $('section.mobOurVision').animatescroll({ scrollSpeed: 500 });
+    $('.mobMenu').fadeOut(500);
+  });
+
+  $('#mobWhoWeAre').on('click', () => {
+    $('section.mobWhoWeAre').animatescroll({ scrollSpeed: 500 });
+    $('.mobMenu').fadeOut(500);
+  });
+
+  $('#mobGetInTouch').on('click', () => {
+    $('section.mobGetInTouch').animatescroll({ scrollSpeed: 500 });
+    $('.mobMenu').fadeOut(500);
+  });
 });
