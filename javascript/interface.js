@@ -188,4 +188,75 @@ $(document).ready(function() {
     $('section.mobGetInTouch').animatescroll({ scrollSpeed: 500 });
     $('.mobMenu').fadeOut(500);
   });
+
+
+  // ---------------------- mobButtons INFOR MANAGEMENT --------------------
+
+  $('#mobAbraham').on('click', () => {
+    $('#mobAbraham').css('border', '5px solid gold');
+    $('#mobNancy, #mobNick, #mobTom, #mobNorma').css({'border': 'none', 'pointer-events': 'none'});
+
+    $('.infoForNancy, .infoForNick, .infoForTom, .infoForNorma').fadeOut(200, () => {
+      setTimeout(() => {
+      $('.infoForThomas').fadeIn(200, () => {
+        $('#mobNick, #mobTom, #mobNorma, #mobNancy').css('pointer-events', 'auto');
+      });
+    }, 500);
+    });
+  });
+
+  $('#mobNancy').on('click', () => {
+    $('#mobNancy').css('border', '5px solid gold');
+    $('#mobAbraham, #mobNick, #mobTom, #mobNorma').css({'border': 'none', 'pointer-events': 'none'});
+
+    $('.infoForThomas, .infoForNick, .infoForTom, .infoForNorma').fadeOut(200, () => {
+      setTimeout(() => {
+      $('.infoForNancy').fadeIn(200, () => {
+        $('#mobNick, #mobTom, #mobNorma, #mobAbraham').css('pointer-events', 'auto');
+      });
+    }, 500);
+    });
+  });
+
+  $('#mobNick').on('click', () => {
+    $('#mobNick').css('border', '5px solid gold');
+    $('#mobAbraham, #mobNancy, #mobTom, #mobNorma').css({'border': 'none', 'pointer-events': 'none'});
+
+    $('.infoForThomas, .infoForNancy, .infoForTom, .infoForNorma').fadeOut(200, () => {
+      setTimeout(() => {
+      $('.infoForNick').fadeIn(200, () => {
+        $('#mobNancy, #mobTom, #mobNorma, #mobAbraham').css('pointer-events', 'auto');
+      });
+    }, 500);
+    });
+  });
+
+  $('#mobNorma').on('click', () => {
+    $('#mobNorma').css('border', '5px solid gold');
+    $('#mobAbraham, #mobNancy, #mobTom, #mobNick').css({'border': 'none', 'pointer-events': 'none'});
+
+    $('.infoForThomas, .infoForNancy, .infoForTom, .infoForNick').fadeOut(200, () => {
+      setTimeout(() => {
+      $('.infoForNorma').fadeIn(200, () => {
+        $('#mobNancy, #mobTom, #mobNick, #mobAbraham').css('pointer-events', 'auto');
+      });
+    }, 500);
+    });
+  });
+
+  $('#mobTom').on('click', () => {
+    $('#mobTom').css('border', '5px solid gold');
+    $('#mobAbraham, #mobNancy, #mobNorma, #mobNick').css({'border': 'none', 'pointer-events': 'none'});
+
+    $('.infoForThomas, .infoForNancy, .infoForNorma, .infoForNick').fadeOut(200, () => {
+      setTimeout(() => {
+      $('.infoForTom').fadeIn(200, () => {
+        $('#mobNancy, #mobNorma, #mobNick, #mobAbraham').css('pointer-events', 'auto');
+      });
+    }, 500);
+    });
+  });
+
+
+
 });

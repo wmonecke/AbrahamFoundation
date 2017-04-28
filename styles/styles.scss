@@ -1265,6 +1265,7 @@ footer {
     border-radius: 15px;
     padding: 2.5vw;
     margin-bottom: 15vh;
+    overflow: hidden;
 
     -webkit-box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
     -moz-box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
@@ -1325,12 +1326,12 @@ footer {
     img {
       position: absolute;
       z-index: 0;
-      bottom: 0;
+      bottom: -14vh;
       left: 0;
       right: 0;
       margin: auto;
       border-radius: 0px;
-      height: 70vh;
+      height: 84vh;
       width: 100vw;
     }
   }
@@ -1422,6 +1423,90 @@ footer {
     -webkit-box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
     -moz-box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
     box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
+
+    img {
+      width: 22vw;
+      margin: 0 5vw;
+      border-radius: 50%;
+    }
+    .mobButtons {
+      position: relative;
+      bottom: 2.5vh;
+      height: 25vh;
+
+      width: 95vw;
+
+      .mobUpperButtons {
+        height: 12.5vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #mobAbraham {
+          border: 5px solid gold;
+          border-radius: 50%;
+        }
+      }
+
+      .mobLowerButtons {
+        height: 12.5vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .mobPersonaContent {
+      height: 45vh;
+      width: 95vw;
+
+      // GENERAL STYLING OF CONTENT
+      h1 {
+        text-align: center;
+        margin: auto;
+        font-size: 1.4em;
+      }
+
+      h3 {
+        text-align: center;
+        margin: auto;
+        font-size: 1.0em;
+        color: rgb(65,65,65);
+        font-weight: 400;
+        margin-bottom: 2.5vh;
+        .yello {
+          color: rgb(163,62,70);
+          font-weight: 400;
+        }
+      }
+
+      article {
+        text-align: justify;
+      }
+
+      //TARGETING EACH BLOCK OF INFO OF EACH PERSONA
+      .infoForThomas {
+
+      }
+
+      .infoForNancy {
+        display: none;
+      }
+
+      .infoForNick {
+        display: none;
+      }
+
+      .infoForNorma {
+        display: none;
+      }
+
+      .infoForTom {
+        display: none
+      }
+    }
   }
 
   section.mobGetInTouch {
