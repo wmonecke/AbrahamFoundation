@@ -8,7 +8,6 @@
 
 body, html {
   display: inline-block;
-
   overflow-x: hidden;
 }
 
@@ -1832,7 +1831,7 @@ footer {
 
   section.mobOurPurpose {
     position: relative;
-    height: 200vh;
+    height: 220vh;
     width: 100vw;
     background-color: #e8cdcf;
     border-radius: 15px;
@@ -1852,7 +1851,10 @@ footer {
     }
 
     .infoOurPurpose {
+      position: absolute;
       height: 80vh !important;
+      bottom: 0vh !important;
+      width: 95vw !important;
       p {
         height: 60vh!important;
         position: absolute;
@@ -1869,7 +1871,7 @@ footer {
         font-size: 19px;
         font-weight: 100;
         text-align: justify;
-        width: 100vw;
+        width: 95vw;
         box-sizing: border-box;
 
         -webkit-box-shadow: 0px -7px 5px 0px rgba(0,0,0,0.21);
@@ -1897,12 +1899,12 @@ footer {
       position: relative;
       z-index: 0;
       top: 0vh;
-      left: 0;
+      left: 2.5vw;
       right: 0;
       margin: auto;
-      border-radius: 0px;
-      height: 200vh;
-      width: 95vw;
+      border-radius: 6px;
+      height: 250vh;
+      width: 90vw;
     }
   }
 
@@ -1969,9 +1971,9 @@ footer {
     img {
       position: relative;
       top: -8vh;
-      left: 0vw;
+      left: -2.5vw;
       height: 90vh !important;
-      width: 95vw !important;
+      width: 100vw !important;
 
       border-radius: 10px;
       -webkit-box-shadow: 0px -12px 20px -6px rgba(0,0,0,0.2);
@@ -2070,7 +2072,7 @@ footer {
 
       article {
         text-align: justify;
-        font-size: 2.5vw;
+        font-size: 2.4vw;
         overflow: scroll;
       }
 
@@ -2122,7 +2124,7 @@ footer {
 
       i {
         margin: 0 7vw;
-        font-size: 6vw;
+        font-size: 8vw;
         color: royalblue;
       }
     }
