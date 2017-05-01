@@ -1429,6 +1429,8 @@ footer {
     border-radius: 15px;
     padding: 2.5vw;
     margin-bottom: 15vh;
+    overflow: scroll;
+    box-sizing: border-box;
 
     -webkit-box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
     -moz-box-shadow: -1px 1px 20px 5px rgba(0,0,0,0.3);
@@ -1636,11 +1638,6 @@ footer {
 }
 
 @media (min-width: 450px) and (max-width: 800px) {
-  html,
-  body {
-    height: 100vh !important;
-    width: 100vw !important;
-  }
 
   .mobMenu {
     display: none;

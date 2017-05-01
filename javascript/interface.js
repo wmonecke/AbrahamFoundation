@@ -170,7 +170,7 @@ $(document).ready(function() {
 
   //-------------------- MENU LINKS ------------------------
   $('#mobOurPurpose').on('click', () => {
-    $('section.mobOurPurpose').animatescroll({ scrollSpeed: 500 });
+    $('#mobPURPOSE').animatescroll({ scrollSpeed: 500 });
     $('.mobMenu').fadeOut(500);
   });
 
