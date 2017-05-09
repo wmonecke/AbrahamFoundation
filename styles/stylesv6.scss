@@ -206,7 +206,6 @@ a {
 
   // *** QUOTE STYLING ***
   .ladingsection {
-
     position: absolute;
     display: flex;
     align-items: center;
@@ -391,7 +390,7 @@ a {
       position: relative;
       overflow: hidden;
       border-radius: 8px;
-      bottom: 57vh;
+      bottom: 60vh;
       width: 55vw;
       height: 49vh;
       left: 8vw;
@@ -1197,6 +1196,7 @@ footer {
       box-shadow: 0px -7px 5px 0px rgba(0,0,0,0.21);
 
       img.quotationmarks{
+        display: none;
         position: absolute;
         top: 5vh;
         left: 2vw;
@@ -1208,7 +1208,7 @@ footer {
 
       .quote {
         position: relative;
-        top:2vh;
+        top:1vh;
         font-weight: lighter;
         margin: auto;
         text-align: center;
@@ -1217,6 +1217,7 @@ footer {
       }
 
       #closeQuotations {
+        display: none;
         position: absolute;
         bottom: 3.5vh;
         right: 2.5vw;
